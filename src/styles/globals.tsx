@@ -9,6 +9,7 @@ const theme = extendTheme({
         color: "white",
         boxSizing: "border-box",
         maxW: "100vw",
+        fontFamily: "Tilt Neon",
       },
       // styles for the `a`
       a: {
