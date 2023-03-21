@@ -4,11 +4,15 @@ const theme = extendTheme({
   styles: {
     global: {
       // styles for the `body`
+      "*": {
+        margin: 0,
+        padding: 0,
+        boxSizing: "border-box",
+        fontFamily: "Tilt Neon",
+      },
       body: {
         bg: "#FEFEFF",
-        boxSizing: "border-box",
         maxW: "100vw",
-        fontFamily: "Tilt Neon",
       },
       // styles for the `a`
       a: {
