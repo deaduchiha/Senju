@@ -6,7 +6,6 @@ const theme = extendTheme({
       // styles for the `body`
       body: {
         bg: "#FEFEFF",
-        color: "white",
         boxSizing: "border-box",
         maxW: "100vw",
         fontFamily: "Tilt Neon",
