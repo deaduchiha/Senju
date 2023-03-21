@@ -1,7 +1,9 @@
 import React from "react";
+// components
+import Navbar from "@/components/modules/common/navbar";
 
 const Landing = () => {
-  return <h1>this is new landing2</h1>;
+  return <Navbar />;
 };
 
 export default Landing;
