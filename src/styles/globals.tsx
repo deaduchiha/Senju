@@ -5,7 +5,7 @@ const theme = extendTheme({
     global: {
       // styles for the `body`
       body: {
-        bg: "gray.400",
+        bg: "#FEFEFF",
         color: "white",
         boxSizing: "border-box",
         maxW: "100vw",
