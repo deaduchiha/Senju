@@ -18,7 +18,7 @@ const theme = extendTheme({
       // styles for the `a`
       a: {
         color: "inherit",
-        textDecoration: "underline",
+        textDecoration: "none",
       },
     },
   },

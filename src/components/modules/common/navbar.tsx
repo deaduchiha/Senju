@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Button, Container, Flex, Image } from "@chakra-ui/react";
+import { Button, Container, Flex, Image } from "@chakra-ui/react";
 
 const Navbar = () => {
   const nav = ["home", "docs", "github", "buy me a coffee"];
