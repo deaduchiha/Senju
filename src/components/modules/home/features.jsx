@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Heading, Image } from "@chakra-ui/react";
 
 const Features = () => {
   return (
@@ -9,6 +9,9 @@ const Features = () => {
           <Heading>
             SENJU <br /> Fake anime API
           </Heading>
+          <Button colorScheme="senju">
+            fake anime api for testing and prototyping
+          </Button>
         </Box>
         <Box>
           <Image src="kurama.svg" alt="kurama" />

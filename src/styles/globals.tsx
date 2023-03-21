@@ -21,6 +21,13 @@ const theme = extendTheme({
       },
     },
   },
+  colors: {
+    senju: {
+      50: "#F49700",
+      500: "#FFA109",
+      900: "#FFA81C",
+    },
+  },
 });
 
 export default theme;
