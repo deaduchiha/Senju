@@ -5,11 +5,11 @@ const Features = () => {
   return (
     <Container mt={10} maxW="container.lg">
       <Flex justifyContent="space-between" alignItems="center">
-        <Box>
+        <Box userSelect="none">
           <Heading>
             SENJU <br /> Fake anime API
           </Heading>
-          <Button colorScheme="senju">
+          <Button colorScheme="senju" cursor="default">
             fake anime api for testing and prototyping
           </Button>
         </Box>

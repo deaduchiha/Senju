@@ -3,13 +3,14 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   styles: {
     global: {
-      // styles for the `body`
+      // styles for the `*`
       "*": {
         margin: 0,
         padding: 0,
         boxSizing: "border-box",
         fontFamily: "Tilt Neon !important",
       },
+      // styles for the `body`
       body: {
         bg: "#FEFEFF",
         maxW: "100vw",
