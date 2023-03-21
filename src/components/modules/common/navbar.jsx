@@ -1,16 +1,27 @@
 import React from "react";
-import Image from "next/image";
-import { Button, Container, Flex } from "@chakra-ui/react";
+
+import { Button, Container, Flex, Image } from "@chakra-ui/react";
 
 const Navbar = () => {
   const nav = ["home", "docs", "github", "buy me a coffee"];
   return (
     <Container maxW="container.lg">
-      <Flex py={2} justifyContent="space-between" alignItems="center">
-        <Image width={100} height={20} src="senju.svg" alt="" />
-        <Flex gap={5}>
+      <Flex py={4} justifyContent="space-between" alignItems="center">
+        <Image
+          width={100}
+          src="senju.svg"
+          alt=""
+          display={{ base: "none", sm: "inline" }}
+        />
+        <Flex
+          w={{ base: "full", sm: "inherit" }}
+          gap={{ sm: 6, base: "inherit" }}
+          justifyContent={{ sm: "inherit", base: "space-around" }}
+        >
           {nav.map((item, index) => (
-            <Button key={index}>{item}</Button>
+            <Button key={index} variant="link" color="black">
+              {item}
+            </Button>
           ))}
         </Flex>
       </Flex>
