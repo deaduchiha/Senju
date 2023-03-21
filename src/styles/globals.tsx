@@ -8,7 +8,7 @@ const theme = extendTheme({
         margin: 0,
         padding: 0,
         boxSizing: "border-box",
-        fontFamily: "Tilt Neon",
+        fontFamily: "Tilt Neon !important",
       },
       body: {
         bg: "#FEFEFF",
