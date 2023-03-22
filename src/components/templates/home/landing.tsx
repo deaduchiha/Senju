@@ -1,7 +1,14 @@
 import React from "react";
+// components
+import Navbar from "@/components/modules/common/navbar";
+import Features from "@/components/modules/home/features";
 
 const Landing = () => {
-  return <h1>Landing</h1>;
+  return (
+    <>
+      <Features />
+    </>
+  );
 };
 
 export default Landing;
