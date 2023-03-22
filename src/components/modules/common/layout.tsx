@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 
 import Navbar from "./navbar";
 
@@ -11,7 +11,9 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navbar />
-      <Box>{children}</Box>
+      <Container mt={10} maxW="container.lg">
+        {children}
+      </Container>
     </>
   );
 };

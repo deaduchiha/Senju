@@ -6,7 +6,6 @@ import Features from "@/components/modules/home/features";
 const Landing = () => {
   return (
     <>
-      <Navbar />
       <Features />
     </>
   );

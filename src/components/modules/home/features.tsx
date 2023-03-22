@@ -3,7 +3,7 @@ import { Box, Button, Container, Flex, Heading, Image } from "@chakra-ui/react";
 
 const Features = () => {
   return (
-    <Container mt={10} maxW="container.lg">
+    <Box>
       <Flex
         flexDirection={{ base: "column-reverse", md: "row" }}
         justifyContent={{ base: "center", md: "space-between" }}
@@ -22,7 +22,7 @@ const Features = () => {
           <Image src="kurama.svg" alt="kurama" />
         </Box>
       </Flex>
-    </Container>
+    </Box>
   );
 };
 
