@@ -4,8 +4,13 @@ import { Box, Button, Container, Flex, Heading, Image } from "@chakra-ui/react";
 const Features = () => {
   return (
     <Container mt={10} maxW="container.lg">
-      <Flex justifyContent="space-between" alignItems="center">
-        <Box userSelect="none">
+      <Flex
+        flexDirection={{ base: "column-reverse", md: "row" }}
+        justifyContent={{ base: "center", md: "space-between" }}
+        alignItems="center"
+        gap={{ base: 5, md: "inherit" }}
+      >
+        <Box userSelect="none" textAlign={{ base: "center", md: "inherit" }}>
           <Heading>
             SENJU <br /> Fake anime API
           </Heading>
