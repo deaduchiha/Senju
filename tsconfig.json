@@ -16,8 +16,8 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@/modules/*": ["./src/components/modules*"],
-      "@/templates/*": ["./src/components/templates*"]
+      "@/modules/*": ["./src/components/modules/*"],
+      "@/templates/*": ["./src/components/templates/*"]
     }
   },
   "include": [

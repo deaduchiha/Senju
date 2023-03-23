@@ -1,6 +1,7 @@
+import Landing from "@/templates/home/landing";
+
 import React from "react";
 // components
-import Landing from "@/components/templates/home/landing";
 
 const Home = () => {
   return <Landing />;
