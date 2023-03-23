@@ -15,7 +15,9 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/modules/*": ["./src/components/modules*"],
+      "@/templates/*": ["./src/components/templates*"]
     }
   },
   "include": [
