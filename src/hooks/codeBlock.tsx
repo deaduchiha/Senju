@@ -6,12 +6,7 @@ import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-tomorrow.css";
 import { Box } from "@chakra-ui/react";
 
-interface UseCodeBlockProps {
-  language: string;
-  code: string;
-}
-
-export const useCodeBlock = ({ language, code }: UseCodeBlockProps) => {
+const useCodeBlock = (language: string, code: string) => {
   const [highlightedCode, setHighlightedCode] = useState("");
 
   useEffect(() => {
@@ -33,3 +28,5 @@ export const useCodeBlock = ({ language, code }: UseCodeBlockProps) => {
     </Box>
   );
 };
+
+export default useCodeBlock;
