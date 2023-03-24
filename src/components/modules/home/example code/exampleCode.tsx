@@ -1,7 +1,7 @@
 import React from "react";
-import CodeBlock from "./codeBlock";
+import CodeBlock from "@/constant/prism/codeBlock";
 import { Box, Heading } from "@chakra-ui/react";
-import { exampleCode } from "./code";
+import { exampleCode } from "../../../constant/prism/code";
 
 const ExampleCode = () => {
   return (
