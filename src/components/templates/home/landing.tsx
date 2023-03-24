@@ -1,6 +1,6 @@
 import React from "react";
 // components
-import Features from "@/components/modules/home/features";
+import Features from "@/modules/home/features";
 
 const Landing = () => {
   return (
