@@ -19,11 +19,13 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ language, code }) => {
       borderRadius={5}
       as="pre"
       whiteSpace="pre-wrap"
-      className={`language-${language}`}
+      bg={"#1F2229"}
+      color="#fff"
+      p={5}
+      // className={`language-${language}`}
     >
       <code
-        style={{ fontFamily: "Fira Sans" }}
-        className={`language-${language}`}
+        // className={`language-${language}`}
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </Box>
