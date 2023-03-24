@@ -22,6 +22,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ language, code }) => {
       className={`language-${language}`}
     >
       <code
+        style={{ fontFamily: "Fira Sans" }}
         className={`language-${language}`}
         dangerouslySetInnerHTML={{ __html: html }}
       />

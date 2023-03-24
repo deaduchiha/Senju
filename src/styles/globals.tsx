@@ -1,6 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  fonts: {
+    heading: "Tilt Neon",
+    body: "Tilt Neon",
+  },
   styles: {
     global: {
       // styles for the `*`
@@ -8,15 +12,9 @@ const theme = extendTheme({
         margin: 0,
         padding: 0,
         boxSizing: "border-box",
-        fontFamily: "Tilt Neon !important",
       },
+
       // styles for the `body`
-      "*": {
-        margin: 0,
-        padding: 0,
-        boxSizing: "border-box",
-        fontFamily: "Tilt Neon !important",
-      },
       body: {
         bg: "#FEFEFF",
         maxW: "100vw",
