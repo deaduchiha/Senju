@@ -1,6 +1,8 @@
+// react
 import React, { ReactNode } from "react";
-import { Box, Container } from "@chakra-ui/react";
-
+// chakra ui
+import { Container } from "@chakra-ui/react";
+// components
 import Navbar from "./navbar";
 
 type LayoutProps = {

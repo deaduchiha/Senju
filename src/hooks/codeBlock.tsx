@@ -1,9 +1,12 @@
+// react
 import { useEffect, useState } from "react";
+// prism
 import Prism from "prismjs";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-css";
 import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-tomorrow.css";
+//chakra ui
 import { Box } from "@chakra-ui/react";
 
 const useCodeBlock = (language: string, code: string) => {

@@ -1,9 +1,9 @@
-import React from "react";
-
+// chakra ui
 import { Button, Container, Flex, Image } from "@chakra-ui/react";
 
 const Navbar = () => {
   const nav = ["home", "docs", "github", "buy me a coffee"];
+
   return (
     <Container maxW="container.lg">
       <Flex py={4} justifyContent="space-between" alignItems="center">

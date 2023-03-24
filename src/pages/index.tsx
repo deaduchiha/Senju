@@ -1,12 +1,12 @@
+// hooks
 import useTitle from "@/hooks/pageTitle";
 
-import Landing from "@/templates/home/landing";
-
-import React from "react";
 // components
+import Landing from "@/templates/home/landing";
 
 const Home = () => {
   useTitle("Senju | Free fake anime API");
+
   return <Landing />;
 };
 

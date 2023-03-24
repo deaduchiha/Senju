@@ -1,11 +1,13 @@
-import React from "react";
+// chakra ui
 import { Box, Heading } from "@chakra-ui/react";
+// custom hooks
 import useCodeBlock from "@/hooks/codeBlock";
-
-import { exampleCode } from "@/components/constant/code";
+// components
+import { exampleCode } from "@/constant/code";
 
 const ExampleCode = () => {
   const highlightedCode = useCodeBlock("javascript", exampleCode);
+
   return (
     <Box my={10}>
       <Heading as="h3">Example Code</Heading>
