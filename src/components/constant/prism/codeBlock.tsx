@@ -15,7 +15,12 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ language, code }) => {
   const html = Prism.highlight(code, Prism.languages[language], language);
 
   return (
-    <Box as="pre" whiteSpace="pre-wrap" className={`language-${language}`}>
+    <Box
+      borderRadius={5}
+      as="pre"
+      whiteSpace="pre-wrap"
+      className={`language-${language}`}
+    >
       <code
         className={`language-${language}`}
         dangerouslySetInnerHTML={{ __html: html }}
