@@ -3,6 +3,7 @@ import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-css";
 import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-tomorrow.css"; // Import the theme CSS file
+import { Box } from "@chakra-ui/react";
 
 interface CodeBlockProps {
   language: string;
@@ -13,12 +14,12 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ language, code }) => {
   const html = Prism.highlight(code, Prism.languages[language], language);
 
   return (
-    <pre className={`language-${language}`}>
+    <Box as="pre" whiteSpace="pre-wrap" className={`language-${language}`}>
       <code
         className={`language-${language}`}
         dangerouslySetInnerHTML={{ __html: html }}
       />
-    </pre>
+    </Box>
   );
 };
 
