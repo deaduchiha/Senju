@@ -1,7 +1,12 @@
 import React from "react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 
 const ExampleCode = () => {
-  return <h1>ExampleCode</h1>;
+  return (
+    <Box my={10}>
+      <Heading as="h3">Example Code</Heading>
+    </Box>
+  );
 };
 
 export default ExampleCode;
