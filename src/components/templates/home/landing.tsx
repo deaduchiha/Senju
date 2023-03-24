@@ -2,7 +2,7 @@ import React from "react";
 // components
 import Features from "@/modules/home/features";
 import Description from "@/modules/home/description";
-import ExampleCode from "@/components/modules/home/exampleCode";
+import ExampleCode from "@/modules/home/exampleCode";
 
 const Landing = () => {
   return (
