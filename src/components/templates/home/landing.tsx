@@ -8,6 +8,7 @@ const Landing = () => {
     <>
       <Features />
       <Description />
+      <
     </>
   );
 };
