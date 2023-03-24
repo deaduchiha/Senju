@@ -1,10 +1,9 @@
 import React from "react";
 import CodeBlock from "./codeBlock";
 import { Box, Heading } from "@chakra-ui/react";
+import { exampleCode } from "./code";
 
 const ExampleCode = () => {
-  const code = `const greeting = "Hello, world!";
-  console.log(greeting);`;
   return (
     <Box my={10}>
       <Heading as="h3">Example Code</Heading>
