@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
 import useCodeBlock from "@/hooks/codeBlock";
 
-import { exampleCode } from "@/constant/prism/code";
+import { exampleCode } from "@/components/constant/code";
 
 const ExampleCode = () => {
   const highlightedCode = useCodeBlock("javascript", exampleCode);
