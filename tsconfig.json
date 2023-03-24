@@ -17,7 +17,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/modules/*": ["./src/components/modules/*"],
-      "@/templates/*": ["./src/components/templates/*"]
+      "@/templates/*": ["./src/components/templates/*"],
+      "@/constant/*": ["./src/components/constant/*"]
     }
   },
   "include": [
