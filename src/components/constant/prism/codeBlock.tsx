@@ -22,6 +22,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ language, code }) => {
       bg={"#1F2229"}
       color="#fff"
       p={5}
+      mt={2}
       // className={`language-${language}`}
     >
       <code
