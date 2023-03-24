@@ -3,6 +3,7 @@ import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-css";
 import "prismjs/components/prism-jsx";
 import "prismjs/themes/prism-tomorrow.css"; // Import the theme CSS file
+
 import { Box } from "@chakra-ui/react";
 
 interface CodeBlockProps {
