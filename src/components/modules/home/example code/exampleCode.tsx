@@ -7,7 +7,7 @@ const ExampleCode = () => {
   return (
     <Box my={10}>
       <Heading as="h3">Example Code</Heading>
-      <CodeBlock language="javascript" code={code} />
+      <CodeBlock language="javascript" code={exampleCode} />
     </Box>
   );
 };
