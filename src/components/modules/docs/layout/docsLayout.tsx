@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 // chakra ui
 import { Flex } from "@chakra-ui/react";
 // components
-import DocsNavbar from "./DocsNavbar";
+import DocsNavbar from "./docsNav";
 import DocsSideBar from "./docsSideBar";
 
 const DocsLayout = () => {
