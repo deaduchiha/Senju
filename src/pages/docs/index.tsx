@@ -1,5 +1,7 @@
+import Docs from "@/templates/docs/docs";
+
 const Index = () => {
-  return <h1 style={{ color: "red" }}>docsdsdasd</h1>;
+  return <Docs />;
 };
 
 export default Index;
