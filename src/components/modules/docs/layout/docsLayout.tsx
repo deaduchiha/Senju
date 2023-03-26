@@ -1,7 +1,7 @@
 // react & next
 import React, { ReactNode } from "react";
 // chakra ui
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Container, Flex } from "@chakra-ui/react";
 // components
 import DocsNavbar from "./docsNav";
 import DocsSideBar from "./docsSideBar";
@@ -15,8 +15,10 @@ const DocsLayout = ({ children }: LayoutProps) => {
     <Flex justifyContent="flex-start">
       <DocsSideBar />
       <Box w="full">
-        <DocsNavbar />
-        {children}
+        <Container maxW="container.lg">
+          <DocsNavbar />
+          {children}
+        </Container>
       </Box>
     </Flex>
   );
