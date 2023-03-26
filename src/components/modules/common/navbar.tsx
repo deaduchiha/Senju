@@ -1,10 +1,7 @@
 // chakra ui
 
-import { Button, Container, Flex, Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
-
-import { Button, Container, Flex, Image } from "@chakra-ui/react";
-
+import { Container, Flex, Image, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
   const nav = ["home", "docs", "github", "buy me a coffee"];
