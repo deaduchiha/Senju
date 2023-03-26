@@ -6,11 +6,7 @@ import { Flex } from "@chakra-ui/react";
 import DocsNavbar from "./DocsNavbar";
 import DocsSideBar from "./docsSideBar";
 
-type LayoutProps = {
-  children: ReactNode;
-};
-
-const DocsLayout = ({ children }: LayoutProps) => {
+const DocsLayout = () => {
   return (
     <Flex justifyContent="flex-start">
       <DocsSideBar />
