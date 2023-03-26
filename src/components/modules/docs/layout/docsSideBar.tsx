@@ -11,17 +11,15 @@ const DocsSideBar = () => {
       left="0"
       w={{ base: "full", md: "xs" }}
       h="full"
-      bg="gray.800"
-      color="white"
+      bg="#fafafa"
+      color="#111"
       overflowX="hidden"
       overflowY="auto"
-      borderColor="gray.700"
-      borderRightWidth="1px"
       pt="6"
       pb="4"
       pl="4"
       pr="3"
-      display={{ base: "none", md: "block" }}
+      display={{ base: "none", md: "flex" }}
     >
       <DocsMenu />
     </Flex>
