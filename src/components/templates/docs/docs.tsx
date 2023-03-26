@@ -1,7 +1,8 @@
 // components
+import DocsLayout from "@/modules/docs/layout/docsLayout";
 
 const Docs = () => {
-  return <></>;
+  return <DocsLayout></DocsLayout>;
 };
 
 export default Docs;
