@@ -1,6 +1,5 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import React from "react";
 
 const ApiRoutes = () => {
   type HttpMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
@@ -37,8 +36,14 @@ const ApiRoutes = () => {
           justifyContent="space-between"
           fontFamily="Fira Sans"
         >
-          <Text>{route.method}</Text>
-          <Text>{route.path}</Text>
+          <Text mb={1}>{route.method}</Text>
+          {route.method === "GET" ? (
+            <Text color="#f49700" as={Link} href={route.path}>
+              {route.path}
+            </Text>
+          ) : (
+            <Text>{route.path}</Text>
+          )}
         </Flex>
       ))}
     </Box>
