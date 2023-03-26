@@ -5,7 +5,9 @@ const DocsMenu = () => {
   return (
     <Box>
       <Heading as="h3" size="md">
-        <Text as={Link} href="#"></Text>
+        <Text as={Link} href="#">
+          hello
+        </Text>
       </Heading>
     </Box>
   );
