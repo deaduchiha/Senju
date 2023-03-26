@@ -1,7 +1,7 @@
 // react & next
 import Link from "next/link";
 // chakra ui
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
 const DocsNavbar = () => {
   const nav = ["docs", "blog", "github", "buy me a coffee"];
