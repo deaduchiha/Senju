@@ -14,7 +14,6 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   const router = useRouter();
   const { route } = router;
-  console.log(route);
 
   return route === "/docs" ? (
     <>{children}</>
