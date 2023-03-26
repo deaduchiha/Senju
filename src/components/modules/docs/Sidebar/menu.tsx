@@ -1,14 +1,14 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { Box, Flex, Heading } from "@chakra-ui/react";
+
+import { Link } from "react-scroll";
 
 const DocsMenu = () => {
   return (
     <Box>
       <Heading as="h3" size="md">
-        <Text as={Link} href="#">
-          hello
-        </Text>
+        Anime
       </Heading>
+      <Flex flexDirection="column" gap={5}></Flex>
     </Box>
   );
 };

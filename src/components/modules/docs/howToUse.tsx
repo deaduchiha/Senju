@@ -3,7 +3,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 const HowToUse = () => {
   return (
-    <Box mt="60">
+    <Box mt="60" id="section1">
       <Heading color="#f49700" mb={2} as="h2" size="md">
         How to use it
       </Heading>

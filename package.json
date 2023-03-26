@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@types/prismjs": "^1.26.0",
+    "@types/react-scroll": "^1.8.6",
     "@types/styled-components": "^5.1.26"
   }
 }
