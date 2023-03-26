@@ -1,22 +1,23 @@
-
 // react & next
 import Link from "next/link";
 
 // chakra ui
-import { Container, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Image, Text } from "@chakra-ui/react";
 
 const Navbar = () => {
-  const nav = ["home", "docs", "github", "buy me a coffee"];
+  const nav = ["docs", "blog", "github", "buy me a coffee"];
 
   return (
     <Container maxW="container.lg">
       <Flex py={4} justifyContent="space-between" alignItems="center">
-        <Image
-          width={100}
-          src="senju.svg"
-          alt=""
-          display={{ base: "none", sm: "inline" }}
-        />
+        <Box as={Link} href="/">
+          <Image
+            width={100}
+            src="senju.svg"
+            alt=""
+            display={{ base: "none", sm: "inline" }}
+          />
+        </Box>
         <Flex
           w={{ base: "full", sm: "inherit" }}
           gap={{ sm: 6, base: "inherit" }}
