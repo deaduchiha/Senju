@@ -1,5 +1,11 @@
+import { Box } from "@chakra-ui/react";
+
 const NavbarCollapse = () => {
-  return <h1>This is collapse</h1>;
+  return (
+    <Box position="absolute" top={5} right={5}>
+      sd
+    </Box>
+  );
 };
 
 export default NavbarCollapse;
