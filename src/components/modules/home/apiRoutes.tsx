@@ -26,7 +26,7 @@ const ApiRoutes = () => {
       <Heading as="h3" size="md">
         Routes
       </Heading>
-      <Text mt={3} mb={4} color="#615B6D">
+      <Text mt={3} mb={4} fontSize="sm" fontWeight={0} color="#615B6D">
         All HTTP methods are supported
       </Text>
       {routes.map((route, index) => (
@@ -35,8 +35,9 @@ const ApiRoutes = () => {
           w={{ base: "full", md: "md" }}
           justifyContent="space-between"
           fontFamily="Fira Sans"
+          fontSize="sm"
         >
-          <Text mb={1}>{route.method}</Text>
+          <Text mb={2}>{route.method}</Text>
           {route.method === "GET" ? (
             <Text color="#f49700" as={Link} href={route.path}>
               {route.path}
