@@ -10,7 +10,7 @@ const Resources = () => {
 
   return (
     <Box my={5}>
-      <Heading as="h3" size="lg">
+      <Heading as="h3" size="md">
         Resources
       </Heading>
       <Text mt={3} mb={4} color="#615B6D">

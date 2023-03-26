@@ -10,7 +10,7 @@ const ExampleCode = () => {
 
   return (
     <Box my={10}>
-      <Heading as="h3" size="lg">
+      <Heading as="h3" size="md">
         Example Code
       </Heading>
       {highlightedCode}
