@@ -19,7 +19,7 @@ const Resources = () => {
       {Array.from(resources).map(([name, quantity], index) => (
         <Flex
           key={index}
-          w="md"
+          w={{ base: "full", md: "md" }}
           justifyContent="space-between"
           fontFamily="Fira Sans"
         >
