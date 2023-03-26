@@ -1,7 +1,11 @@
-import React from "react";
+import { Box, Heading } from "@chakra-ui/react";
 
 const Resources = () => {
-  return <h1>Resources</h1>;
+  return (
+    <Box>
+      <Heading as="h2">Resources</Heading>
+    </Box>
+  );
 };
 
 export default Resources;
