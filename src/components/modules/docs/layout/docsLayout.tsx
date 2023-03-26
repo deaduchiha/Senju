@@ -1,8 +1,10 @@
 // react & next
 import React, { ReactNode } from "react";
 // chakra ui
-import { Box, Flex } from "@chakra-ui/react";
-import DocsNavbar from "./navbar";
+import { Flex } from "@chakra-ui/react";
+// components
+import DocsNavbar from "./DocsNavbar";
+import DocsSideBar from "./docsSideBar";
 
 type LayoutProps = {
   children: ReactNode;
@@ -11,16 +13,8 @@ type LayoutProps = {
 const DocsLayout = ({ children }: LayoutProps) => {
   return (
     <Flex justifyContent="flex-start">
-      {/* bg="#f5f5f5" */}
-      <Box
-        minH="100vh"
-        w="20vw"
-        bg="#f5f5f5cc"
-        display={{ base: "none", md: "block" }}
-      ></Box>
-      <Box w="full">
-        <DocsNavbar />
-      </Box>
+      <DocsSideBar />
+      <DocsNavbar />
     </Flex>
   );
 };
