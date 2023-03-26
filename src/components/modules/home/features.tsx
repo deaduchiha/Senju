@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
+// chakra ui
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 const Features = () => {
   return (
@@ -14,9 +14,15 @@ const Features = () => {
           <Heading>
             SENJU <br /> Fake anime API
           </Heading>
-          <Button colorScheme="senju" cursor="default">
+          <Text
+            bg="#f49700"
+            color="#fff"
+            p={1}
+            borderRadius={5}
+            cursor="default"
+          >
             fake anime api for testing and prototyping
-          </Button>
+          </Text>
         </Box>
         <Box>
           <Image src="kurama.svg" alt="kurama" />
