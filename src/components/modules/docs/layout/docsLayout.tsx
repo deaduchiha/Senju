@@ -15,7 +15,7 @@ const DocsLayout = ({ children }: LayoutProps) => {
       <Box
         minH="100vh"
         w="20vw"
-        bg={{ base: "green", md: "black", lg: "red" }}
+        bg="#f5f5f5cc"
         display={{ base: "none", md: "block" }}
       ></Box>
       <Box w="full">
