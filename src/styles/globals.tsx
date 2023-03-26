@@ -1,10 +1,16 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
+  // for custom breakPoints
+  breakpoints: {
+    //...code
+  },
+  // fonts
   fonts: {
     heading: "Tilt Neon",
     body: "Tilt Neon",
   },
+  // styles
   styles: {
     global: {
       // styles for the `*`

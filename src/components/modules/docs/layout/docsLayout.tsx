@@ -15,7 +15,7 @@ const DocsLayout = ({ children }: LayoutProps) => {
     <Flex justifyContent="flex-start">
       <DocsSideBar />
       <Box w="full">
-        <Container maxW="container.lg">
+        <Container maxW="container.md">
           <DocsNavbar />
           {children}
         </Container>
