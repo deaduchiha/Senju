@@ -4,7 +4,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 const HowToUse = () => {
   return (
     <Box mt="60">
-      <Heading as="h2" size="md">
+      <Heading color="#f49700" mb={2} as="h2" size="md">
         How to use it
       </Heading>
       <Text w={{ base: "full", md: "md" }} color="#615B6D" textAlign="justify">
