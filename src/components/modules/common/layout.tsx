@@ -16,10 +16,12 @@ const Layout = ({ children }: LayoutProps) => {
   const { route } = router;
   console.log(route);
 
-  return (
+  return route === "/docs" ? (
+    <>{children}</>
+  ) : (
     <>
       <Navbar />
-      <Container mt={10} maxW={route === "/docs" ? "full" : "container.lg"}>
+      <Container mt={10} maxW={"container.lg"}>
         {children}
       </Container>
       <Footer />

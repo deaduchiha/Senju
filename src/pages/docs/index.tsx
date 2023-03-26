@@ -1,5 +1,5 @@
 const Index = () => {
-  return <h1>docs</h1>;
+  return <h1 style={{ color: "red" }}>docsdsdasd</h1>;
 };
 
 export default Index;
