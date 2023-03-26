@@ -1,5 +1,7 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+// react & next
 import Link from "next/link";
+// chakra ui
+import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 
 const Resources = () => {
   type ResourceCount = Map<string, number>;

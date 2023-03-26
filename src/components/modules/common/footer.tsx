@@ -1,3 +1,4 @@
+// chakra ui
 import { Flex, Text } from "@chakra-ui/react";
 
 const Footer = () => {

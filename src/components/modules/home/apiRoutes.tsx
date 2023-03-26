@@ -1,5 +1,7 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+// react & next
 import Link from "next/link";
+// chakra ui
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const ApiRoutes = () => {
   type HttpMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";

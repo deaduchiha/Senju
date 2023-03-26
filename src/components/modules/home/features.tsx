@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+// chakra ui
+import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 const Features = () => {
   return (

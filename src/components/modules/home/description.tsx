@@ -1,4 +1,4 @@
-import React from "react";
+// chakra ui
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const Description = () => {
