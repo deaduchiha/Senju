@@ -1,7 +1,7 @@
 // react & next
-import React, { ReactNode } from "react";
+import React from "react";
 // chakra ui
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 // components
 import DocsNavbar from "./docsNav";
 import DocsSideBar from "./docsSideBar";
@@ -10,7 +10,9 @@ const DocsLayout = () => {
   return (
     <Flex justifyContent="flex-start">
       <DocsSideBar />
-      <DocsNavbar />
+      <Box w="full">
+        <DocsNavbar />
+      </Box>
     </Flex>
   );
 };
