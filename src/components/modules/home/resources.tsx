@@ -40,6 +40,15 @@ const Resources = () => {
           )}
         </Flex>
       ))}
+      <Button
+        variant="solid"
+        colorScheme="docButton"
+        fontWeight="0"
+        size="md"
+        mt={3}
+      >
+        View details on docs
+      </Button>
     </Box>
   );
 };
