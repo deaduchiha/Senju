@@ -1,5 +1,6 @@
 // chakra ui
-import { Button, Container, Flex, Image } from "@chakra-ui/react";
+import { Button, Container, Flex, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Navbar = () => {
   const nav = ["home", "docs", "github", "buy me a coffee"];
@@ -19,9 +20,9 @@ const Navbar = () => {
           justifyContent={{ sm: "inherit", base: "space-around" }}
         >
           {nav.map((item, index) => (
-            <Button key={index} variant="link" color="black">
+            <Text key={index} as={Link} href={`/${item}`}>
               {item}
-            </Button>
+            </Text>
           ))}
         </Flex>
       </Flex>
