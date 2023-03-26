@@ -2,7 +2,7 @@
 import React, { ReactNode } from "react";
 // chakra ui
 import { Box, Flex } from "@chakra-ui/react";
-import DocsNavbar from "../navbar";
+import DocsNavbar from "./navbar";
 
 type LayoutProps = {
   children: ReactNode;
