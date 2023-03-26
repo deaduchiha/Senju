@@ -1,28 +1,46 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 
 const ApiRoutes = () => {
-  type routesName = Map<string, string>;
-  const routes: routesName = new Map([
-    ["GET", "/anime"],
-    ["GET", "/anime/naruto"],
-    ["GET", "/characters"],
-    ["GET", "/characters/1"],
-    ["GET", "/characters?limit=10"],
-    ["POST", "/anime"],
-    ["DELETE", "/anime/naruto"],
-    ["PUT", "/characters/1"],
-    ["PATCH", "/characters/1"],
-    ["DELETE", "/characters/1"],
-  ]);
+  type HttpMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+  type RoutePath = string;
+  type Route = {
+    method: HttpMethod;
+    path: RoutePath;
+  };
+  const routes: Route[] = [
+    { method: "GET", path: "/anime" },
+    { method: "GET", path: "/anime/naruto" },
+    { method: "GET", path: "/characters" },
+    { method: "GET", path: "/characters/1" },
+    { method: "GET", path: "/characters?limit=10" },
+    { method: "POST", path: "/anime" },
+    { method: "DELETE", path: "/anime/naruto" },
+    { method: "PUT", path: "/characters/1" },
+    { method: "PATCH", path: "/characters/1" },
+    { method: "DELETE", path: "/characters/1" },
+  ];
+
   return (
-    <Box>
+    <Box my={2}>
       <Heading as="h3" size="md">
         Routes
       </Heading>
       <Text mt={3} mb={4} color="#615B6D">
         All HTTP methods are supported
       </Text>
+      {routes.map((route, index) => (
+        <Flex
+          key={index}
+          w={{ base: "full", md: "md" }}
+          justifyContent="space-between"
+          fontFamily="Fira Sans"
+        >
+          <Text>{route.method}</Text>
+          <Text>{route.path}</Text>
+        </Flex>
+      ))}
     </Box>
   );
 };
