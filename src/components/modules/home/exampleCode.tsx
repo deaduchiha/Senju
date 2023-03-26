@@ -10,9 +10,13 @@ const ExampleCode = () => {
 
   return (
     <Box my={10}>
+ landing
       <Heading as="h3" size="md">
         Example Code
       </Heading>
+
+      <Heading as="h3">Example Code</Heading>
+ main
       {highlightedCode}
     </Box>
   );
