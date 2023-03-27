@@ -1,10 +1,25 @@
+// react & next
+import React, { createContext, useContext, useState, useEffect } from "react";
 // chakra ui
 import { Box, Flex, useBreakpoint } from "@chakra-ui/react";
 // components
 import DocsMenu from "../Sidebar/menu";
 // icons
 import { SlMenu } from "react-icons/sl";
-import { useEffect, useState } from "react";
+
+interface AppContextType {
+  isCollapse: boolean;
+  handleClick: () => void;
+}
+
+const AppContext = createContext<AppContextType>({
+  isCollapse: false,
+  handleClick: () => {},
+});
+
+export function useAppContext() {
+  return useContext(AppContext);
+}
 
 const DocsSideBar = () => {
   const [isCollapse, setIsCollapse] = useState(false);
@@ -20,10 +35,10 @@ const DocsSideBar = () => {
   }, [currentBreakpoint]);
 
   return (
-    <>
+    <AppContext.Provider value={{ isCollapse, handleClick }}>
       <Flex
         w={!isCollapse ? "225px" : "85px"}
-        bg={{ base: isCollapse ? "inherit" : "#fafafa", md: "#fafafa" }}
+        bg={isCollapse ? "inherit" : "#fafafa"}
         pl={5}
         pt={10}
         pos={{ base: "fixed", md: "sticky" }}
@@ -32,6 +47,7 @@ const DocsSideBar = () => {
         minH="100vh"
         zIndex={!isCollapse ? 1 : "inherit"}
         h={{ base: "0", md: "full" }}
+        transition="0.5s all ease-out"
       >
         {!isCollapse ? <DocsMenu /> : ""}
 
@@ -44,7 +60,7 @@ const DocsSideBar = () => {
           <SlMenu onClick={handleClick} size={"20px"} cursor="pointer" />
         </Box>
       </Flex>
-    </>
+    </AppContext.Provider>
   );
 };
 
