@@ -7,7 +7,13 @@ const DocsNavbar = () => {
   const nav = ["docs", "blog", "github", "buy me a coffee"];
 
   return (
-    <Flex justifyContent="space-between" py={5} flexWrap="wrap">
+    <Flex
+      justifyContent="space-between"
+      gap={{ base: 5, md: "inherit" }}
+      pl="14"
+      py={5}
+      flexWrap="wrap"
+    >
       <Text as={Link} href="/">
         home
       </Text>

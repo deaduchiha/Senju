@@ -32,7 +32,6 @@ const DocsSideBar = () => {
         minH="100vh"
         zIndex={!isCollapse ? 1 : "inherit"}
         h={{ base: "0", md: "full" }}
-        // display={{ base: "none", md: "flex" }}
       >
         {!isCollapse ? <DocsMenu /> : ""}
 

@@ -3,7 +3,7 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   // for custom breakPoints
   breakpoints: {
-    //...code
+    sidebar: "30em",
   },
   // fonts
   fonts: {
