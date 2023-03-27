@@ -2,7 +2,7 @@
 import React, { ReactNode } from "react";
 import { useRouter } from "next/router";
 // chakra ui
-import { Container } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 // components
 import Navbar from "./navbar";
 import Footer from "./footer";
@@ -21,7 +21,9 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <Navbar />
       <Container mt={10} maxW={"container.lg"}>
-        {children}
+        <Flex flexDirection="column" minH="56vh">
+          {children}
+        </Flex>
       </Container>
       <Footer />
     </>
