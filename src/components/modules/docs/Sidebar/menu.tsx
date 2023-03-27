@@ -4,8 +4,12 @@ import { Box, Flex, Heading } from "@chakra-ui/react";
 import { tutorial } from "@/constant/docsTitle";
 // react scroll
 import { Link } from "react-scroll";
+// context
+import { useAppContext } from "../layout/docsSideBar";
 
 const DocsMenu = () => {
+  const { isCollapse, handleClick } = useAppContext();
+
   return (
     <Box>
       <Heading as="h3" size="md" mb={3}>
@@ -15,6 +19,7 @@ const DocsMenu = () => {
         {tutorial.map((item, index) =>
           item.type === "anime" ? (
             <Link
+              onClick={handleClick}
               to={item.id}
               smooth={true}
               duration={500}
@@ -35,6 +40,7 @@ const DocsMenu = () => {
         {tutorial.map((item, index) =>
           item.type === "characters" ? (
             <Link
+              onClick={handleClick}
               to={item.id}
               smooth={true}
               duration={500}
