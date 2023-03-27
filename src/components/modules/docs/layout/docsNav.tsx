@@ -7,7 +7,7 @@ const DocsNavbar = () => {
   const nav = ["docs", "blog", "github", "buy me a coffee"];
 
   return (
-    <Flex justifyContent="space-between" py={5}>
+    <Flex justifyContent="space-between" py={5} flexWrap="wrap">
       <Text as={Link} href="/">
         home
       </Text>

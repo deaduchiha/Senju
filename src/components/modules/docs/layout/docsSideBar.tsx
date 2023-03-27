@@ -1,10 +1,10 @@
 // chakra ui
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, useBreakpoint } from "@chakra-ui/react";
 // components
 import DocsMenu from "../Sidebar/menu";
 // icons
 import { SlMenu } from "react-icons/sl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const DocsSideBar = () => {
   const [isCollapse, setIsCollapse] = useState(false);
@@ -13,21 +13,29 @@ const DocsSideBar = () => {
     setIsCollapse(!isCollapse);
   };
 
+  const currentBreakpoint = useBreakpoint();
+
+  useEffect(() => {
+    if (currentBreakpoint === "sm") setIsCollapse(true);
+  }, [currentBreakpoint]);
+
   return (
     <>
       <Flex
         w={!isCollapse ? "225px" : "85px"}
-        bg="#fafafa"
+        bg={{ base: isCollapse ? "inherit" : "#fafafa", md: "#fafafa" }}
         pl={5}
         pt={10}
-        pos="sticky"
+        pos={{ base: "fixed", md: "sticky" }}
         top={0}
         left={0}
         minH="100vh"
-        h="full"
-        display={{ base: "none", md: "flex" }}
+        zIndex={!isCollapse ? 1 : "inherit"}
+        h={{ base: "0", md: "full" }}
+        // display={{ base: "none", md: "flex" }}
       >
         {!isCollapse ? <DocsMenu /> : ""}
+
         <Box
           position="absolute"
           top={5}
