@@ -18,7 +18,7 @@ const theme = extendTheme({
         margin: 0,
         padding: 0,
         boxSizing: "border-box",
-        transition: "0.6s",
+        transition: "0.4s all ease-out",
       },
 
       // styles for the `body`
